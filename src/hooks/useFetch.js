@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import keys from './keys.json';
 
 export default function useFetch(backendOperation, queryAttributesStr) {
   // Declaring the essential state variables for data and checking
@@ -9,6 +10,8 @@ export default function useFetch(backendOperation, queryAttributesStr) {
 
   useEffect(() => {
     // Extracting API key and endpoint URL from the keys.json file
+    const { backendIp } = keys;
+    console.log(backendIp);
     const baseUrl = 'http://localhost:3000';
 
     // Changing loading and success state to true whenever there's an effect
