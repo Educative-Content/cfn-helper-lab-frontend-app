@@ -11,8 +11,7 @@ export default function useFetch(backendOperation, queryAttributesStr) {
   useEffect(() => {
     // Extracting API key and endpoint URL from the keys.json file
     const { backendIp } = keys;
-    console.log(backendIp);
-    const baseUrl = 'http://localhost:3000';
+    const baseUrl = `http://${backendIp}:3000`;
 
     // Changing loading and success state to true whenever there's an effect
     setLoading(true);

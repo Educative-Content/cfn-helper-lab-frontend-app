@@ -1,7 +1,6 @@
 {
   "name": "cfn-helper-lab-frontend-app",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-servicediscovery": "^3.395.0",
