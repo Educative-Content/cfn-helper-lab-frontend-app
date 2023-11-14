@@ -10,8 +10,8 @@ export default function useFetch(backendOperation, queryAttributesStr) {
 
   useEffect(() => {
     // Extracting API key and endpoint URL from the keys.json file
-    const { backendIp } = keys;
-    const baseUrl = `http://${backendIp}:3000`;
+    const { backendIp, backendPort } = keys;
+    const baseUrl = `http://${backendIp}:${backendPort}`;
 
     // Changing loading and success state to true whenever there's an effect
     setLoading(true);
