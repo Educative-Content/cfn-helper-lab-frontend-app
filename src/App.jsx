@@ -7,6 +7,7 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
+import keys from './hooks/keys.json';
 import NavBar from './components/utils/NavBar';
 import Footer from './components/utils/Footer';
 import HomePage from './components/HomePage';
@@ -15,7 +16,7 @@ import NotFound from './components/errorPages/NotFound';
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar url={`http://${keys.backendIp}:${keys.backendPort}`} />
       <div className="d-flex flex-column" style={{ minHeight: '90vh', background: '#313131', paddingTop: '10vh' }}>
         <BrowserRouter>
           <Routes>
