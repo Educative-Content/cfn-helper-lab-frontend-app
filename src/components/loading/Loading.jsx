@@ -7,7 +7,7 @@ import CardList from '../CardList';
 function Loading() {
   const list = [];
   let i = 0;
-  while (i < 10) {
+  while (i < 4) {
     list.push({ id: i });
     i += 1;
   }
