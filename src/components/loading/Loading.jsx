@@ -19,7 +19,7 @@ function Loading() {
     <Container>
       <Col className="align-items-center">
         <Row style={{ paddingTop: '10px' }}>
-          <h1 className="header1-design">ToDo List</h1>
+          <h1 className="header1-design">To-Do List</h1>
         </Row>
         <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
           <CardList data={loadData} type="loader" />
