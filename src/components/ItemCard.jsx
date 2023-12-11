@@ -187,7 +187,7 @@ export default function ItemCard({
                     </Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    {`Are you sure want to delete the todo item "${todoItemData.task}"?`}
+                    {`Are you sure want to delete the to-do item "${todoItemData.task}"?`}
                   </Modal.Body>
                   <Modal.Footer>
                     <Button className="button" variant="secondary" onClick={handleClose}>No</Button>
