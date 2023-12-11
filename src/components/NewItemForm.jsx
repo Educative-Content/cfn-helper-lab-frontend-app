@@ -44,7 +44,7 @@ export default function NewItemForm({
                         delay={{ show: 250, hide: 400 }}
                         overlay={(
                           <Tooltip className="custom-tooltip" id="status-tooltip" style={{ fontSize: '12px' }}>
-                            Mark Item as Done
+                            Add New To-Do Item
                           </Tooltip>
                       )}
                       >
@@ -70,35 +70,3 @@ NewItemForm.propTypes = {
   setAction: PropTypes.func.isRequired,
   setTask: PropTypes.func.isRequired,
 };
-
-/* <Form onSubmit={addCourseMethod}>
-        <Container className="flex">
-          <InputGroup className="mb-3">
-            <Form.Control
-              placeholder="Course Title"
-              aria-label="Course Title"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Form.Control
-              placeholder="Course Author"
-              aria-label="Course Author"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Form.Control
-              placeholder="Course URL"
-              aria-label="Course URL"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Form.Control
-              placeholder="Course Image URL"
-              aria-label="Course Image URL"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Button className="button" type="submit">Add Course</Button>
-          </InputGroup>
-        </Container>
-      </Form> */
