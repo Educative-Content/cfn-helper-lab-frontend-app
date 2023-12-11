@@ -33,7 +33,7 @@ export default function NewItemForm({
                   <Col style={{ paddingTop: '3px' }}>
                     <InputGroup>
                       <Form.Control
-                        placeholder="Add Todo Item"
+                        placeholder="Add To-Do Item"
                       />
                     </InputGroup>
                   </Col>
