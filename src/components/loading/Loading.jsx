@@ -22,7 +22,7 @@ function Loading() {
           <h1 className="header1-design">Add To-Do Item</h1>
         </Row>
         <Row style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-          <CardList data={{todoList: [{ id: 99 }]}} type="loader" />
+          <CardList data={{ todoList: [{ id: 99 }] }} type="loader" />
         </Row>
         <Row style={{ paddingTop: '20px' }}>
           <hr style={{ color: '#ffffff' }} />
