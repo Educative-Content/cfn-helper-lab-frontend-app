@@ -13,7 +13,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 export default function NewItemForm({
   setAction, setTask,
 }) {
-  // Function to update GraphQL query parameters to trigger API call to add course
+  // Function to add new item
   const addTodoItem = (event) => {
     event.preventDefault();
     if (event.target[0].value) {
