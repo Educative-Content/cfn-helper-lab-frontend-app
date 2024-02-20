@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import ClearList from './ClearList';
 import ItemCard from './ItemCard';
 import LoaderCard from './loading/LoaderCard';
 
@@ -50,6 +51,10 @@ function CardList({
   return (
     <Col className="flex-col">
       { listCards }
+      {(type === 'todoItem')
+        && (
+        <ClearList setAction={setAction} />
+        )}
     </Col>
   );
 }
