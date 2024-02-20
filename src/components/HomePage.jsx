@@ -28,8 +28,8 @@ export default function HomePage() {
     JSON.stringify(queryParams),
   );
 
-  // Function to re-update GraphQL query parameters fetch list of items
-  // when either a course had been added, edited, or deleted
+  // Function to re-update query parameters fetch list of items
+  // when either a item had been added, edited, or deleted
   useEffect(() => {
     if (!callLoading && action !== 'allItems') {
       setAction('allItems');
