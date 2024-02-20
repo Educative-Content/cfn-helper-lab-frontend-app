@@ -21,7 +21,7 @@ export default function ItemCard({
 
   const todoItemData = JSON.parse(jsonData);
 
-  // Function to update query parameters to trigger API call to delete course
+  // Function to update query parameters to trigger API call to delete item
   const deleteItemMethod = () => {
     setId(todoItemData.id);
     setAction('removeItem');
@@ -40,7 +40,7 @@ export default function ItemCard({
     setEditorMode(false);
   };
 
-  // Function to update query parameters to trigger API call to edit course
+  // Function to update query parameters to trigger API call to edit item
   const confirmEdits = (event) => {
     event.preventDefault();
     if (event.target[1].value) {
